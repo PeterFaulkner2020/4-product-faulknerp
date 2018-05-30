@@ -13,15 +13,179 @@
         <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
         <!-- custom style -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- font awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
     </head>
 
     <body>
-        
-        <h1>Hello World</h1>
-        
-        <p>Hey there, just testing out gitbub and netlify...</p>
 
-        
+        <!-- top nav, desktop and tablet -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme">
+                <a href="#home" class="w3-bar-item w3-button">Kimball Farm</a>
+                <a href="#Overview" class="w3-bar-item w3-button w3-hide-small">Overview</a>
+                <a href="#Activities" class="w3-bar-item w3-button w3-hide-small">Activities</a>
+                <a href="#Food" class="w3-bar-item w3-button w3-hide-small">Food</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="topNav()">&#9776;</a>
+            </div>
+            <div id="mobileTopNav" class="w3-bar-block w3-theme-l1 w3-hide w3-hide-large w3-hide-medium">
+                <a href="#Overview" class="w3-bar-item w3-button">Overview</a>
+                <a href="#Activities" class="w3-bar-item w3-button">Activities</a>
+                <a href="#Food" class="w3-bar-item w3-button">Food</a>
+            </div>
+        </div>
+        <!-- top nav, mobile -->
+
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+            <div class="w3-display-middle" style="white-space:nowrap;">
+                <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">REGISTER</span>
+            </div>
+        </div>
+
+        <!-- Container (Overview Section) -->
+        <div class="w3-padding-64" id="Overview">
+
+            <div class="w3-row w3-container">
+                <h1>Overview</h1>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-third">
+                    <div class="w3-card">
+                        <div class="container w3-center w3-jumbo w3-text-theme2">
+                            <i class="fa fa-book"></i>
+                        </div>
+                        <div class="w3-container w3-center w3-theme2">
+                            <h3>bla bla</h3>  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="w3-card">
+                        <div class="container w3-center w3-jumbo w3-text-theme2">
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <div class="w3-container w3-center w3-theme2">
+                            <h3>Staff</h3>  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="w3-card">
+                        <div class="container w3-center w3-jumbo w3-text-theme2">
+                            <i class="fa fa-phone-square"></i>
+                        </div>
+                        <div class="w3-container w3-center w3-theme2">
+                            <h3>Contact</h3>  
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Third Parallax Image with Logo Text -->
+        <div class="bgimg-2 w3-display-container w3-opacity-min" id="home">
+        </div>
+
+
+        <!-- Container (Food Section) -->
+        <div class="w3-padding-64" id="Food">
+
+            <div class="w3-row w3-container">
+                <h1>Food</h1>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="w3-card">
+                        <img src="img/KFARMFOOD.jpg" class="w3-image" alt="Soccer Team Training">
+                    </div>
+                </div>
+                <div class="w3-half">
+                    <button onclick="accordion('Food')" class="w3-btn w3-block w3-theme-l1 w3-left-align w3-border">Food<i class="fa fa-caret-down w3-right w3-xlarge"></i>
+                    </button>
+                    <div id="Food" class="w3-container w3-hide w3-theme-l5">
+                        <h4>Food</h4>
+                        <p>Some text about Golf...</p>
+                    </div>
+
+                    <button onclick="accordion('iceCream')" class="w3-btn w3-block w3-theme-l1 w3-left-align">Ice Cream</button>
+
+                    <div id="iceCream" class="w3-container w3-hide w3-theme-l5">
+                        <h4>Ice Cream</h4>
+                        <p>Some text about Ice Cream...</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- Second Parallax Image with Logo Text -->
+        <div class="bgimg-3 w3-display-container w3-opacity-min" id="home">
+        </div>
+
+
+        <!-- Container (Activities Section) -->
+        <div class="w3-padding-64" id="Activities">
+
+            <div class="w3-row w3-container">
+                <h1>Activities</h1>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="w3-card">
+                        <img src="img/minigolf.jpg" class="w3-image" alt="Soccer Team Training">
+                    </div>
+                </div>
+                <div class="w3-half">
+                    <div class="w3-bar w3-theme">
+                        <button class="w3-bar-item w3-button" onclick="openTab('cars-boats')">Bumper Cars/Boats</button>
+                        <button class="w3-bar-item w3-button" onclick="openTab('golf')">Golf</button>
+                        <button class="w3-bar-item w3-button" onclick="openTab('Zipline')">Zipline</button>
+                    </div>
+
+                    <div id="cars-boats" class="w3-container tab">
+                        <h2>Bumper Cars/Boats</h2>
+                        <p>Here at Kimball Farm's we have a very popular arena used specifically for Bumper Boats. In this arena, there are many other players that have the same objective as you; hit the other people hard. At Kimball's, this is allowed because we placed large pads around the outside to keep them afloat and you safe. On the other side of the farm, we offer an area for Bumper Cars. NEED MORE ABOUT BUMPER CARS</p>
+                    </div>
+
+                    <div id="golf" class="w3-container tab" style="display:none">
+                        <h2>Golf</h2>
+                        <p>The Essex team is comprised of players from Middlesex County, Massachusetts.</p>
+                    </div>
+
+                    <div id="Zipline" class="w3-container tab" style="display:none">
+                        <h2>Zipline</h2>
+                        <p>The Suffolk team is comprised of players from Middlesex County, Massachusetts.</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Javascript -->
+        <script src="js/tabs.js"></script>
+        <script src="js/topNav.js"></script>
+        <script src="js/accordion.js"></script>
+
+
     </body>
 
 </html>
