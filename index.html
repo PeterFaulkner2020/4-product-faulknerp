@@ -41,50 +41,39 @@
         <!-- First Parallax Image with Logo Text -->
         <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
             <div class="w3-display-middle" style="white-space:nowrap;">
-                <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">REGISTER</span>
+                <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Kimball Farm</span>
             </div>
         </div>
 
-        <!-- Container (Overview Section) -->
+
         <div class="w3-padding-64" id="Overview">
 
             <div class="w3-row w3-container">
-                <h1>Overview</h1>
+
             </div>
 
-            <div class="w3-row">
-                <div class="w3-third">
-                    <div class="w3-card">
-                        <div class="container w3-center w3-jumbo w3-text-theme2">
-                            <i class="fa fa-book"></i>
-                        </div>
-                        <div class="w3-container w3-center w3-theme2">
-                            <h3>bla bla</h3>  
-                        </div>
+            <div class="w3-row-padding">
+                <div class="w3-col l3 m6 w3-marginn-bottom">
+                    <div class="w3-display-container">
+                        <img src="/img/bumperboats.jpg" alt="Bumper boats" style="width:100%">
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-marginn-bottom">
+                    <div class="w3-display-container">
+                        <img src="/img/kfarmpic.jpg" alt="Bumper boats" style="width:100%">
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-marginn-bottom">
+                    <div class="w3-display-container">
+                        <img src="/img/bc1.jpeg" alt="Bumper boats" style="width:100%">
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-marginn-bottom">
+                    <div class="w3-display-container">
+                        <img src="/img/Kimballs%20Farm%20750_8276-HDR-M.jpg" alt="Bumper boats" style="width:100%">
                     </div>
                 </div>
 
-                <div class="w3-third">
-                    <div class="w3-card">
-                        <div class="container w3-center w3-jumbo w3-text-theme2">
-                            <i class="fa fa-users"></i>
-                        </div>
-                        <div class="w3-container w3-center w3-theme2">
-                            <h3>Staff</h3>  
-                        </div>
-                    </div>
-                </div>
-
-                <div class="w3-third">
-                    <div class="w3-card">
-                        <div class="container w3-center w3-jumbo w3-text-theme2">
-                            <i class="fa fa-phone-square"></i>
-                        </div>
-                        <div class="w3-container w3-center w3-theme2">
-                            <h3>Contact</h3>  
-                        </div>
-                    </div>
-                </div>
 
             </div>
 
@@ -109,18 +98,69 @@
                     </div>
                 </div>
                 <div class="w3-half">
-                    <button onclick="accordion('Food')" class="w3-btn w3-block w3-theme-l1 w3-left-align w3-border">Food<i class="fa fa-caret-down w3-right w3-xlarge"></i>
+                    <!-- Seafood accordion -->
+                    <button onclick="accordion('seafood')" class="w3-btn w3-block w3-theme-l1 w3-left-align w3-border">Seafood<i class="fa fa-caret-down w3-right w3-xlarge"></i>
                     </button>
-                    <div id="Food" class="w3-container w3-hide w3-theme-l5">
-                        <h4>Food</h4>
-                        <p>Some text about Golf...</p>
-                    </div>
+                    <div id="seafood" class="w3-container w3-hide w3-theme-l5">
+                        <h4>Seafood</h4>
+                        <ul>
+                            <li>Captain Seafood Platter - $32.93</li>
 
-                    <button onclick="accordion('iceCream')" class="w3-btn w3-block w3-theme-l1 w3-left-align">Ice Cream</button>
+                            <li>Pick Two Seafood Combo - $28.93</li>
+
+                            <li>Boiled Lobster, Two 1lb - $Market Price</li>
+
+                            <li>Steamed Clams - $Market Price</li>
+
+                        </ul>
+                    </div>
+                    <!-- Ice cream accordion-->
+                    <button onclick="accordion('iceCream')" class="w3-btn w3-block w3-theme-l1 w3-left-align">Ice Cream and Frozen Yogurt</button>
 
                     <div id="iceCream" class="w3-container w3-hide w3-theme-l5">
-                        <h4>Ice Cream</h4>
-                        <p>Some text about Ice Cream...</p>
+                        <h4>Ice Cream and Frozen Yogurt </h4>
+                        <ul>
+                            <li>Black Raspberry</li>
+                            <li>Butterscotch</li>
+                            <li>Cappuccino Crunch</li>
+                            <li>Chocolate</li>
+                            <li>Coffee</li>
+                            <li>Mocha Chip</li>
+                            <li>Coconut Almond Crunch</li>
+                            <li>Coffee Oreo</li>
+
+
+
+
+
+
+
+                        </ul>
+                    </div>
+
+
+
+
+                    <!-- Grill accordion-->
+                    <button onclick="accordion('grill')" class="w3-btn w3-block w3-theme-l1 w3-left-align">Grill</button>
+
+                    <div id="grill" class="w3-container w3-hide w3-theme-l5">
+                        <h4>Grill</h4>
+                        <ul>
+                        <li>Cheeseburger - $10.50</li>
+                            <li>Grilled Chicken Sandwich - $11.50</li>
+                            <li>Hot Dog - $7.95 </li>
+                            <li>Grilled Cheese - $6.50</li>
+                            <li>Delux Grilled Cheese - $6.75</li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        </ul>
                     </div>
 
                 </div>
@@ -158,17 +198,17 @@
 
                     <div id="cars-boats" class="w3-container tab">
                         <h2>Bumper Cars/Boats</h2>
-                        <p>Here at Kimball Farm's we have a very popular arena used specifically for Bumper Boats. In this arena, there are many other players that have the same objective as you; hit the other people hard. At Kimball's, this is allowed because we placed large pads around the outside to keep them afloat and you safe. On the other side of the farm, we offer an area for Bumper Cars. NEED MORE ABOUT BUMPER CARS</p>
+                        <p>Here at Kimball Farm's we have a very popular arena used specifically for Bumper Boats. In this arena, there are many other players that have the same objective as you; hit the other people hard. At Kimball's, this is allowed because we placed large pads around the outside to keep them afloat and you safe. On the other side of the farm, we offer an area for Bumper Cars. The Bumper Cars here are exactly like our Bumper Boats; very safe and extremely fun.</p>
                     </div>
 
                     <div id="golf" class="w3-container tab" style="display:none">
                         <h2>Golf</h2>
-                        <p>The Essex team is comprised of players from Middlesex County, Massachusetts.</p>
+                        <p>At Kimbal Farm's we have a adventure themed mini golf course. This course is made up of 18 holes that are challenging and fun. If mini golf isn't your thing, we offer a driving that is large enough for tons of people.</p>
                     </div>
 
                     <div id="Zipline" class="w3-container tab" style="display:none">
                         <h2>Zipline</h2>
-                        <p>The Suffolk team is comprised of players from Middlesex County, Massachusetts.</p>
+                        <p>Outside of the other activities, we offer a fun and entertaining Zipline. This ride is extremely safe and is great for the whole. If you like speed, your going to love our zipline here at Kimball Farm.</p>
                     </div>
 
                 </div>
